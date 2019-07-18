@@ -4,9 +4,9 @@ import "./ERC20.sol";
 import "./ERC20Detailed.sol";
 import "./Ownable.sol";
 
-contract PtrnToken is ERC20, ERC20Detailed,Ownable {
+contract RON is ERC20, ERC20Detailed,Ownable {
     uint private INITIAL_SUPPLY = 1000e26;
-    constructor () public ERC20Detailed("PATRON", "PTRN", 18) Ownable(){
+    constructor () public ERC20Detailed("RON", "RON", 18) Ownable(){
         _mint(msg.sender, INITIAL_SUPPLY);
     }
     
